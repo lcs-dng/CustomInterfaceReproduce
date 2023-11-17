@@ -40,6 +40,33 @@ struct ContentView: View {
                     .toolbarBackground(Color("Dark Grey"), for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
                 
+                VStack {
+                    
+                    // Searchbar group
+                    ZStack {
+                        
+                        // Background colour of the searchbar
+                        Rectangle()
+                        Color("Dark Grey")
+                            .frame(height: 80)
+                        
+                        // Searchbar
+                        HStack {
+                            Spacer()
+                                .frame(width: 23)
+                            Rectangle()
+                                .foregroundColor(.gray)
+                                .frame(height: 40)
+                                .cornerRadius(10)
+                            Spacer()
+                                .frame(width: 23)
+                        }
+                        
+                    }
+                    .padding(.bottom, 670)
+                    
+                }
+                
             }
         }
         

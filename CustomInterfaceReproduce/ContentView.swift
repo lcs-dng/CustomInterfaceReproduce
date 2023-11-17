@@ -11,10 +11,33 @@ struct ContentView: View {
     var body: some View {
         
         NavigationStack {
-            
-            Color.black
-                .ignoresSafeArea()
-            
+            ZStack {
+                
+                // Changing the background colour
+                Color.black
+                    .ignoresSafeArea()
+                
+                    // Top tool bar
+                    .toolbar {
+                        
+                        ToolbarItem (placement: .topBarLeading){
+                            Button(action: {}) {
+                                HStack {
+                                    Image(systemName: "chevron.backward")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 25)
+                                    Text("Accidental Tech Podcast")
+                                        .foregroundColor(.white)
+                                        .font(Font.system(size: 20))
+                                        .padding(.leading, 50)
+                                }
+                            }
+                        }
+                        
+                    }
+                
+            }
         }
         
     }

@@ -36,6 +36,9 @@ struct ContentView: View {
                         }
                         
                     }
+                    // Change the toolbar colour to Dark Grey
+                    .toolbarBackground(Color("Dark Grey"), for: .navigationBar)
+                    .toolbarBackground(.visible, for: .navigationBar)
                 
             }
         }

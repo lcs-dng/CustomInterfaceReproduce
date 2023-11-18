@@ -48,14 +48,13 @@ struct ContentView: View {
                         // Background colour of the searchbar
                         Rectangle()
                         Color("Dark Grey")
-                            .frame(height: 80)
+                            .frame(width: 400, height: 80)
                         
                         // Searchbar
                         HStack {
                             Spacer()
                                 .frame(width: 23)
-                            Rectangle()
-                                .foregroundColor(.gray)
+                            Color("Lighter Grey")
                                 .frame(height: 40)
                                 .cornerRadius(10)
                             Spacer()

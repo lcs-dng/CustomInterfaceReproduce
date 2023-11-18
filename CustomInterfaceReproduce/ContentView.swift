@@ -61,6 +61,17 @@ struct ContentView: View {
                                 .frame(width: 23)
                         }
                         
+                        // Text on the searchbar
+                        HStack {
+                            Image(systemName: "magnifyingglass")
+                                .foregroundColor(.gray)
+                            Text("Search")
+                                .font(Font.system(size: 18))
+                                .foregroundColor(.gray)
+                                .offset(x: -5)
+                        }
+                        .padding(.trailing, 255)
+                        
                     }
                     .padding(.bottom, 670)
                     
